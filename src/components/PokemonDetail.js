@@ -7,7 +7,7 @@ import loader from '../assets/loader.svg';
 function PokemonDetail({ match }) {
     useEffect(() => {
         fetchPokemon();
-    }, []);
+    }, [match]);
 
 
     const [pokemon, setPokemon] = useState({});
